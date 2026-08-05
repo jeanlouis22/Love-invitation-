@@ -403,3 +403,254 @@ button {
     }
 
 }
+/* =========================
+
+   PAGE ORGANISATION DU DATE
+
+========================= */
+
+#dateScreen {
+
+    background: linear-gradient(
+
+        135deg,
+
+        #fff8f5,
+
+        #fdecef
+
+    );
+
+}
+
+.date-card {
+
+    width: min(92vw, 520px);
+
+    background: white;
+
+    padding: 40px 30px;
+
+    border-radius: 25px;
+
+    text-align: left;
+
+    box-shadow: 0 20px 60px rgba(100, 50, 60, 0.15);
+
+    animation: apparition 0.8s ease;
+
+}
+
+.coeur-haut {
+
+    text-align: center;
+
+    font-size: 40px;
+
+}
+
+.date-card h1,
+
+.date-card h2 {
+
+    text-align: center;
+
+}
+
+.date-card h1 {
+
+    margin-top: 10px;
+
+    color: #743d46;
+
+    font-size: 38px;
+
+}
+
+.date-card h2 {
+
+    margin-top: 10px;
+
+    font-size: 25px;
+
+}
+
+.date-card .sous-titre {
+
+    text-align: center;
+
+}
+
+/* =========================
+
+   CHAMPS
+
+========================= */
+
+.champ {
+
+    margin-top: 22px;
+
+}
+
+.champ label {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    color: #633d43;
+
+}
+
+.champ label span {
+
+    font-weight: normal;
+
+    color: #999;
+
+}
+
+.lieu {
+
+    padding: 14px;
+
+    border-radius: 13px;
+
+    background: #fff3f3;
+
+    border: 1px solid #f0d5d8;
+
+    font-family: Arial, sans-serif;
+
+    color: #633d43;
+
+}
+
+.champ input,
+
+.champ textarea {
+
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #ead4d7;
+
+    border-radius: 13px;
+
+    background: #fffafa;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 15px;
+
+    color: #493237;
+
+    outline: none;
+
+}
+
+.champ input {
+
+    width: 100%;
+
+}
+
+.champ textarea {
+
+    resize: vertical;
+
+}
+
+.champ input:focus,
+
+.champ textarea:focus {
+
+    border-color: #d98e98;
+
+    box-shadow: 0 0 0 3px rgba(217, 142, 152, 0.12);
+
+}
+
+/* =========================
+
+   BOUTON CONFIRMER
+
+========================= */
+
+.bouton-confirmer {
+
+    width: 100%;
+
+    margin-top: 28px;
+
+    background: #d85b70;
+
+    color: white;
+
+    box-shadow: 0 8px 20px rgba(216, 91, 112, 0.3);
+
+}
+
+.bouton-confirmer:hover {
+
+    transform: translateY(-3px);
+
+}
+
+/* =========================
+
+   MESSAGE D'ERREUR
+
+========================= */
+
+.erreur {
+
+    min-height: 20px;
+
+    margin-top: 12px;
+
+    text-align: center;
+
+    color: #b24c5d;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 14px;
+
+}
+
+/* =========================
+
+   MOBILE
+
+========================= */
+
+@media (max-width: 500px) {
+
+    .date-card {
+
+        padding: 32px 22px;
+
+    }
+
+    .date-card h1 {
+
+        font-size: 32px;
+
+    }
+
+    .date-card h2 {
+
+        font-size: 22px;
+
+    }
+
+}
