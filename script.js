@@ -92,19 +92,26 @@ const lieu = document.getElementById("lieu");
 
 const monLieu = "Hotel ivoire ❤️";
 
-lieu.textContent = monLieu;
-
 boutonOui.onclick = function () {
+
+    // Mettre le lieu à jour
+
+    lieu.textContent = monLieu;
+
+    // Cacher la lettre
 
     lettreScreen.classList.add("cache");
 
     enveloppeScreen.classList.add("cache");
+
+    // Afficher la page du date
 
     dateScreen.classList.remove("cache");
 
     dateScreen.style.display = "flex";
 
 };
+
 // =========================
 
 // BOUTON CONFIRMER
@@ -141,16 +148,18 @@ boutonConfirmer.onclick = function () {
 
     }
 
-    // Pour l'instant, on affiche les informations
+    alert(
 
-    // dans la console pour vérifier que tout fonctionne.
+        "❤️ Invitation confirmée !\n\n" +
 
-    console.log("Lieu :", monLieu);
+        "📍 Lieu : " + monLieu + "\n" +
 
-    console.log("Jour :", champDate.value);
+        "📅 Jour : " + champDate.value + "\n" +
 
-    console.log("Heure :", champHeure.value);
+        "🕒 Heure : " + champHeure.value + "\n" +
 
-    console.log("Petit mot :", petitMot.value);
+        "💌 Petit mot : " + (petitMot.value || "Aucun")
+
+    );
 
 };
