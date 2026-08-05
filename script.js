@@ -83,7 +83,6 @@ function deplacerBouton() {
 // BOUTON OUI
 
 // =========================
-
 const boutonOui = document.getElementById("oui");
 
 const dateScreen = document.getElementById("dateScreen");
@@ -102,12 +101,16 @@ lieu.textContent = monLieu;
 
 boutonOui.addEventListener("click", function () {
 
-    // Cacher la lettre
+    // Cacher complètement la lettre
 
     lettreScreen.style.display = "none";
 
-    // Afficher la page du date
+    // Afficher la page du rendez-vous
 
     dateScreen.classList.remove("cache");
 
+    dateScreen.style.display = "flex";
+
 });
+
+
