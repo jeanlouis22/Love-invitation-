@@ -112,7 +112,7 @@ boutonOui.onclick = function () {
 
 };
 
-// =========================
+ // =========================
 
 // BOUTON CONFIRMER
 
@@ -128,9 +128,13 @@ const petitMot = document.getElementById("petitMot");
 
 const erreur = document.getElementById("erreur");
 
+const finalScreen = document.getElementById("finalScreen");
+
 boutonConfirmer.onclick = function () {
 
     erreur.textContent = "";
+
+    // Vérifier le jour
 
     if (champDate.value === "") {
 
@@ -140,6 +144,8 @@ boutonConfirmer.onclick = function () {
 
     }
 
+    // Vérifier l'heure
+
     if (champHeure.value === "") {
 
         erreur.textContent = "Choisis d'abord une heure 🕒❤️";
@@ -148,18 +154,14 @@ boutonConfirmer.onclick = function () {
 
     }
 
-    alert(
+    // Cacher la page du date
 
-        "❤️ Invitation confirmée !\n\n" +
+    dateScreen.classList.add("cache");
 
-        "📍 Lieu : " + monLieu + "\n" +
+    // Afficher la page finale
 
-        "📅 Jour : " + champDate.value + "\n" +
+    finalScreen.classList.remove("cache");
 
-        "🕒 Heure : " + champHeure.value + "\n" +
-
-        "💌 Petit mot : " + (petitMot.value || "Aucun")
-
-    );
+    finalScreen.style.display = "flex";
 
 };
