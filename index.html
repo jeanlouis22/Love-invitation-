@@ -1,37 +1,111 @@
 <!DOCTYPE html>
+
 <html lang="fr">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Pour toi ❤️</title>
+    <title>Une petite surprise ❤️</title>
 
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-    <div class="enveloppe-container">
+    <!-- ENVELOPPE -->
 
-        <div class="enveloppe">
+    <div id="enveloppeScreen" class="screen">
 
-            <div class="enveloppe-fond"></div>
+        <div class="enveloppe-container">
 
-            <div class="enveloppe-rabat"></div>
+            <div class="enveloppe">
 
-            <div class="coeur">
-                ❤️
+                <div class="enveloppe-fond"></div>
+
+                <div class="enveloppe-rabat"></div>
+
+                <div class="coeur">
+
+                    ❤️
+
+                </div>
+
             </div>
+
+            <p class="texte">
+
+                Touchez la lettre 💌
+
+            </p>
 
         </div>
 
-        <p class="texte">
-            Touchez la lettre 💌
-        </p>
+    </div>
+
+    <!-- LETTRE -->
+
+    <div id="lettreScreen" class="screen cache">
+
+        <div class="lettre">
+
+            <p class="petit-titre">
+
+                POUR TOI,
+
+            </p>
+
+            <h1 id="prenom">
+
+                Prénom ❤️
+
+            </h1>
+
+            <div class="separateur">
+
+                ♡
+
+            </div>
+
+            <h2>
+
+                Ça te dit un date avec moi ? 🥹❤️
+
+            </h2>
+
+            <p class="sous-titre">
+
+                Dire non ne sert à rien… mais tu peux essayer 🤭
+
+            </p>
+
+            <div class="boutons">
+
+                <button id="oui" class="bouton-oui">
+
+                    ❤️ Oui
+
+                </button>
+
+                <button id="non" class="bouton-non">
+
+                    🤍 Non
+
+                </button>
+
+            </div>
+
+            <p id="messageNon" class="message-non"></p>
+
+        </div>
 
     </div>
+
     <script src="script.js"></script>
+
 </body>
 
 </html>
