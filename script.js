@@ -90,7 +90,7 @@ const dateScreen = document.getElementById("dateScreen");
 
 const lieu = document.getElementById("lieu");
 
-const monLieu = "Cocody, Abidjan ❤️";
+const monLieu = "Hotel ivoire ❤️";
 
 lieu.textContent = monLieu;
 
