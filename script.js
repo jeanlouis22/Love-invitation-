@@ -83,34 +83,25 @@ function deplacerBouton() {
 // BOUTON OUI
 
 // =========================
+
 const boutonOui = document.getElementById("oui");
 
 const dateScreen = document.getElementById("dateScreen");
 
 const lieu = document.getElementById("lieu");
 
-// Le lieu que TU choisis
-
 const monLieu = "Cocody, Abidjan ❤️";
-
-// Afficher le lieu
 
 lieu.textContent = monLieu;
 
-// Quand elle clique sur OUI
+boutonOui.onclick = function () {
 
-boutonOui.addEventListener("click", function () {
+    lettreScreen.classList.add("cache");
 
-    // Cacher complètement la lettre
-
-    lettreScreen.style.display = "none";
-
-    // Afficher la page du rendez-vous
+    enveloppeScreen.classList.add("cache");
 
     dateScreen.classList.remove("cache");
 
     dateScreen.style.display = "flex";
 
-});
-
-
+};
