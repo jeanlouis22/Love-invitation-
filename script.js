@@ -23,3 +23,58 @@ enveloppe.addEventListener("click", function () {
     }, 900);
 
 });
+const boutonNon = document.getElementById("non");
+
+const messageNon = document.getElementById("messageNon");
+
+let nombreClicsNon = 0;
+
+const messagesNon = [
+
+    "Tu es vraiment sûre ? 🥺",
+
+    "Tu veux vraiment me refuser ? 😭",
+
+    "Ehh stp 😭❤️"
+
+];
+
+boutonNon.addEventListener("click", function () {
+
+    nombreClicsNon++;
+
+    if (nombreClicsNon <= 3) {
+
+        messageNon.textContent = messagesNon[nombreClicsNon - 1];
+
+    }
+
+    if (nombreClicsNon >= 3) {
+
+        boutonNon.style.position = "fixed";
+
+        deplacerBouton();
+
+    }
+
+});
+
+function deplacerBouton() {
+
+    const largeur = boutonNon.offsetWidth;
+
+    const hauteur = boutonNon.offsetHeight;
+
+    const maxX = window.innerWidth - largeur - 20;
+
+    const maxY = window.innerHeight - hauteur - 20;
+
+    const x = Math.random() * maxX;
+
+    const y = Math.random() * maxY;
+
+    boutonNon.style.left = x + "px";
+
+    boutonNon.style.top = y + "px";
+
+}
