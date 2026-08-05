@@ -201,8 +201,6 @@ boutonOK.onclick = function () {
 
         "❤️ Invitation confirmée !\n\n" +
 
-        "Merci d’avoir accepté mon invitation 🥹❤️\n\n" +
-
         "📍 Lieu : " + monLieu + "\n" +
 
         "📅 Jour : " + champDate.value + "\n" +
