@@ -105,3 +105,52 @@ boutonOui.onclick = function () {
     dateScreen.style.display = "flex";
 
 };
+// =========================
+
+// BOUTON CONFIRMER
+
+// =========================
+
+const boutonConfirmer = document.getElementById("confirmer");
+
+const champDate = document.getElementById("date");
+
+const champHeure = document.getElementById("heure");
+
+const petitMot = document.getElementById("petitMot");
+
+const erreur = document.getElementById("erreur");
+
+boutonConfirmer.onclick = function () {
+
+    erreur.textContent = "";
+
+    if (champDate.value === "") {
+
+        erreur.textContent = "Choisis d'abord un jour 📅❤️";
+
+        return;
+
+    }
+
+    if (champHeure.value === "") {
+
+        erreur.textContent = "Choisis d'abord une heure 🕒❤️";
+
+        return;
+
+    }
+
+    // Pour l'instant, on affiche les informations
+
+    // dans la console pour vérifier que tout fonctionne.
+
+    console.log("Lieu :", monLieu);
+
+    console.log("Jour :", champDate.value);
+
+    console.log("Heure :", champHeure.value);
+
+    console.log("Petit mot :", petitMot.value);
+
+};
