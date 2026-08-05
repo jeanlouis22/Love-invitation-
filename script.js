@@ -112,7 +112,7 @@ boutonOui.onclick = function () {
 
 };
 
- // =========================
+// =========================
 
 // BOUTON CONFIRMER
 
@@ -129,6 +129,16 @@ const petitMot = document.getElementById("petitMot");
 const erreur = document.getElementById("erreur");
 
 const finalScreen = document.getElementById("finalScreen");
+
+// Éléments de la page finale
+
+const finalLieu = document.getElementById("finalLieu");
+
+const finalDate = document.getElementById("finalDate");
+
+const finalHeure = document.getElementById("finalHeure");
+
+const finalPetitMot = document.getElementById("finalPetitMot");
 
 boutonConfirmer.onclick = function () {
 
@@ -154,7 +164,17 @@ boutonConfirmer.onclick = function () {
 
     }
 
-    // Cacher la page du date
+    // Mettre les informations sur la page finale
+
+    finalLieu.textContent = monLieu;
+
+    finalDate.textContent = champDate.value;
+
+    finalHeure.textContent = champHeure.value;
+
+    finalPetitMot.textContent = petitMot.value || "Aucun petit mot ❤️";
+
+    // Cacher la page d'organisation
 
     dateScreen.classList.add("cache");
 
