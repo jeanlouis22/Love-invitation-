@@ -78,3 +78,36 @@ function deplacerBouton() {
     boutonNon.style.top = y + "px";
 
 }
+// =========================
+
+// BOUTON OUI
+
+// =========================
+
+const boutonOui = document.getElementById("oui");
+
+const dateScreen = document.getElementById("dateScreen");
+
+const lieu = document.getElementById("lieu");
+
+// Le lieu que TU choisis
+
+const monLieu = "Cocody, Abidjan ❤️";
+
+// Afficher le lieu
+
+lieu.textContent = monLieu;
+
+// Quand elle clique sur OUI
+
+boutonOui.addEventListener("click", function () {
+
+    // Cacher la lettre
+
+    lettreScreen.style.display = "none";
+
+    // Afficher la page du date
+
+    dateScreen.classList.remove("cache");
+
+});
