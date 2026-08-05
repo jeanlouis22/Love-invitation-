@@ -185,3 +185,42 @@ boutonConfirmer.onclick = function () {
     finalScreen.style.display = "flex";
 
 };
+// =========================
+
+// BOUTON OK → WHATSAPP
+
+// =========================
+
+const boutonOK = document.getElementById("boutonOK");
+
+boutonOK.onclick = function () {
+
+    const numeroWhatsApp = "2250596266649";
+
+    const message =
+
+        "❤️ Invitation confirmée !\n\n" +
+
+        "Merci d’avoir accepté mon invitation 🥹❤️\n\n" +
+
+        "📍 Lieu : " + monLieu + "\n" +
+
+        "📅 Jour : " + champDate.value + "\n" +
+
+        "🕒 Heure : " + champHeure.value + "\n" +
+
+        "💌 Petit mot : " + (petitMot.value || "Aucun petit mot ❤️");
+
+    const lienWhatsApp =
+
+        "https://wa.me/" +
+
+        numeroWhatsApp +
+
+        "?text=" +
+
+        encodeURIComponent(message);
+
+    window.location.href = lienWhatsApp;
+
+};
