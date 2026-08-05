@@ -105,7 +105,129 @@
     </div>
 
     <script src="script.js"></script>
+<!-- PAGE ORGANISATION DU DATE -->
 
+<div id="dateScreen" class="screen cache">
+
+    <div class="date-card">
+
+        <div class="coeur-haut">
+
+            💕
+
+        </div>
+
+        <h1>
+
+            Parfait ❤️
+
+        </h1>
+
+        <h2>
+
+            On va se voir !
+
+        </h2>
+
+        <p class="sous-titre">
+
+            Choisis le jour et l'heure qui te conviennent 🥰
+
+        </p>
+
+        <!-- LIEU -->
+
+        <div class="champ">
+
+            <label>
+
+                📍 Lieu
+
+            </label>
+
+            <div id="lieu" class="lieu">
+
+                Le lieu sera indiqué ici
+
+            </div>
+
+        </div>
+
+        <!-- JOUR -->
+
+        <div class="champ">
+
+            <label for="date">
+
+                📅 Choisis le jour
+
+            </label>
+
+            <input
+
+                type="date"
+
+                id="date"
+
+            >
+
+        </div>
+
+        <!-- HEURE -->
+
+        <div class="champ">
+
+            <label for="heure">
+
+                🕒 Choisis l'heure
+
+            </label>
+
+            <input
+
+                type="time"
+
+                id="heure"
+
+            >
+
+        </div>
+
+        <!-- PETIT MOT -->
+
+        <div class="champ">
+
+            <label for="petitMot">
+
+                💌 Un petit mot pour moi
+
+                <span>(facultatif)</span>
+
+            </label>
+
+            <textarea
+
+                id="petitMot"
+
+                rows="4"
+
+                placeholder="Écris-moi quelque chose 🥰"
+
+            ></textarea>
+
+        </div>
+
+        <button id="confirmer" class="bouton-confirmer">
+
+            Confirmer ❤️
+
+        </button>
+
+        <p id="erreur" class="erreur"></p>
+
+    </div>
+
+</div>
 </body>
 
 </html>
