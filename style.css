@@ -654,3 +654,136 @@ button {
     }
 
 }
+/* =========================
+
+   PAGE FINALE
+
+========================= */
+
+#finalScreen {
+
+    background: linear-gradient(
+
+        135deg,
+
+        #fff8f5,
+
+        #fdecef
+
+    );
+
+}
+
+.final-card {
+
+    width: min(92vw, 520px);
+
+    background: white;
+
+    padding: 50px 30px;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    box-shadow: 0 20px 60px rgba(100, 50, 60, 0.15);
+
+    animation: apparition 0.8s ease;
+
+}
+
+.final-card h1 {
+
+    margin-top: 25px;
+
+    color: #743d46;
+
+    font-size: 30px;
+
+    line-height: 1.4;
+
+}
+
+.final-card p {
+
+    margin-top: 20px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 17px;
+
+    color: #8c7377;
+
+}
+
+.coeurs {
+
+    font-size: 42px;
+
+    animation: coeurs 1.5s ease-in-out infinite;
+
+}
+
+.bisous {
+
+    margin-top: 30px;
+
+    font-size: 22px;
+
+    color: #d85b70;
+
+    font-weight: bold;
+
+}
+
+@keyframes coeurs {
+
+    0% {
+
+        transform: scale(1);
+
+    }
+
+    50% {
+
+        transform: scale(1.15);
+
+    }
+
+    100% {
+
+        transform: scale(1);
+
+    }
+
+}
+
+/* MOBILE */
+
+@media (max-width: 500px) {
+
+    .final-card {
+
+        padding: 40px 22px;
+
+    }
+
+    .final-card h1 {
+
+        font-size: 25px;
+
+    }
+
+    .final-card p {
+
+        font-size: 16px;
+
+    }
+
+    .coeurs {
+
+        font-size: 35px;
+
+    }
+
+}
